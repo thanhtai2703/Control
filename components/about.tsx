@@ -1,6 +1,7 @@
 import { View, Text, Button } from "react-native";
 import { useEffect, useState } from "react";
 import { connect, sendMessage } from "../src/mqttservice";
+import {Client} from "paho-mqtt";
 
 const AboutScreen = () => {
     useEffect(() => {

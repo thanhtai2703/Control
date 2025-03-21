@@ -1,13 +1,10 @@
-import {View, Text, Button, Alert,StyleSheet} from "react-native"
+import {View,Text, Button, Alert,StyleSheet} from "react-native"
 
     const HomeScreen = (props:any)=>
 {
     const {navigation} = props;
     return(
-    <View>
-        <View>
-            <Text>SI BA LA MA</Text>
-        </View>
+    <View style={styles.title}>
         <Button title="Details" onPress={()=>navigation.navigate("Details")}/>
     </View>
     )
@@ -30,6 +27,8 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 30,
         fontWeight: 'bold',
+        justifyContent: 'space-around',
+        flex:1
     },
 });
 export default HomeScreen;

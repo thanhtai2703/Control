@@ -4,28 +4,27 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
  import HomeScreen from "./components/home";
  import Details from "./components/detail";
  import AboutScreen from "./components/about";
-import {useEffect, useState} from "react";
-import {connect, sendMessage} from "./src/mqttservice";
+import DemoScreen from "./components/Demo";
+
 const Stack = createNativeStackNavigator();
 const App = ()=>{
     return(
+        //<DemoScreen/>
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen
-                    name="Home"
-                    component={HomeScreen}
-                    options={{title: 'Welcome'}}
+                    name="Demo"
+                    component={DemoScreen}
+                    options={{title: 'Welcome' }}
                 />
                 <Stack.Screen
-                    name="Details"
+                    name ="Details"
                     component={Details}
-                    options={{title: 'Details'}}/>
-                <Stack.Screen
-                    name="About"
-                    component={AboutScreen}
-                    options={{title: 'Chi tieets'}}/>
+                    options={{title: 'Details'}}
+                />
             </Stack.Navigator>
         </NavigationContainer>
+
     )
 }
 export default App;
