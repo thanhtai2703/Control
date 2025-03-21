@@ -12,6 +12,7 @@ const DemoScreen = ({navigation}:any) => {
         { id: "4", name: "Đèn", icon: "lightbulb" },
         { id: "5", name: "Gara", icon: "car" },
         { id: "6", name: "Cảnh Báo", icon: "exclamation-triangle" },
+        {id: "7", name:"Automation",icon:"play-circle"}
     ];
 
     return (
@@ -69,6 +70,8 @@ const styles = StyleSheet.create({
         padding: 15,
         marginVertical: 5,
         borderRadius: 10,
+        justifyContent:'center',
+        height:100,
     },
     menuText: {
         marginLeft: 15,
