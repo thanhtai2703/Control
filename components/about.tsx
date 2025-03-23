@@ -8,8 +8,8 @@ const AboutScreen = () => {
         connect();
     }, []);
 
-    const [message, setMessage] = useState<string>("taideptraivodich");
-    const [topic, setTopic] = useState<string>("test");
+    const [message, setMessage] = useState<string>('{ "command": "ON" }');
+    const [topic, setTopic] = useState<string>("emqx/esp32");
 
     const handleSend = () => {
         sendMessage(topic, message);
